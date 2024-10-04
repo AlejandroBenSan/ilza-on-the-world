@@ -1,0 +1,15 @@
+---
+import MapComponent from '../components/map';
+import Layout from '../layouts/Layout.astro';
+import { getLocations } from '../lib/getLocations';
+import 'leaflet/dist/leaflet.css';
+
+const locations = getLocations(); 
+
+---
+
+<Layout title="Map">
+	<main>
+		<MapComponent client:only="react" {locations} />
+	</main>
+</Layout>
