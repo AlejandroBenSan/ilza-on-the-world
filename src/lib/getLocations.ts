@@ -2,7 +2,7 @@ import fs from 'fs';
 import path from 'path';
 import matter from 'gray-matter';
 
-interface Location {
+export interface Location {
   id: number;
   name: string;
   position: [number, number];
@@ -19,7 +19,6 @@ export const getLocations = (): Location[] => {
     const filePath = path.join(directoryPath, file);
     const fileContents = fs.readFileSync(filePath, 'utf8');
     const { data } = matter(fileContents);
-    console.log(data)
     return {
       id: index,
       name: `${data.first_name} ${data.last_name}`,

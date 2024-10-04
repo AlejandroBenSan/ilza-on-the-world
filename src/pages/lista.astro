@@ -1,0 +1,14 @@
+---
+import Layout from '../layouts/Layout.astro';
+import ListaPersonajes from '../components/listaPersonajes';
+
+import { getLocations } from '../lib/getLocations';
+
+const locations = getLocations(); 
+---
+
+<Layout title="Lista osób">
+    <main>
+        <ListaPersonajes client:only="react" {locations}/>
+    </main>
+</Layout>

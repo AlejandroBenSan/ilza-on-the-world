@@ -5,7 +5,7 @@ longitude: -0.127758
 first_name: Mary
 last_name: Smith
 
-photo_url: https://example.com/photos/mary_smith.jpg
+photo_url: https://media.istockphoto.com/id/1289220545/es/foto/hermosa-mujer-sonriendo-con-los-brazos-cruzados.jpg?s=612x612&w=0&k=20&c=bgvI9eiFPdRglO1s7mMW7xC-Kut4LOsehzjrCcrMLx8=
 
 history: "Mary Smith was a pioneering scientist who made significant contributions to the field of chemistry in the 20th century. Her discovery of a new element changed the course of modern science."
 
